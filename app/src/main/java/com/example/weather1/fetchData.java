@@ -46,7 +46,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q="+TempSearchKey+"&units=metric&appid=db8a7fe0a4acfcd6bfc3d482d509f772");
+            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q="+TempSearchKey+"&units=metric&appid= your api key");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
